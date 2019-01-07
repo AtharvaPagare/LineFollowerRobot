@@ -39,7 +39,7 @@ The IC 7805 converts the input supply to 5V DC supply.
 The code is uploaded via multiple files.
 The order of files is 
 a. VRC2018_Final.ino
-b. Sensor_Read.ino
+b. Sensor_Read.ino, motor_functions.ino
 c. Line_Follower.ino
 d. Old_sensor_PID_error.ino
 e. Old_sensor_PID_update.ino
