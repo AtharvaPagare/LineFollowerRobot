@@ -34,4 +34,13 @@ The data sheet for L293D motor driver is available here - https://www.arduino.cc
 The input to the regulator is taken from the VCC and GND pins of the motor driver. The 5V output cable is connected to the microcontroller circuit.
 The IC 7805 converts the input supply to 5V DC supply.
 
+# Code
 
+The code is uploaded via multiple files.
+The order of files is 
+a. VRC2018_Final.ino
+b. Sensor_Read.ino
+c. Line_Follower.ino
+d. Old_sensor_PID_error.ino
+e. Old_sensor_PID_update.ino
+f. tracks.ino and track_actions.ino
