@@ -5,7 +5,7 @@ This repository contains the code for Line Follower Robot.
 The code is written in Arduino environment.
 The components required for building the bot are:
 
-a. Sensors to diffrentiate between black and white lines. The sensor used by me is TCRT5000 which consists of Infrared emitter and phototransistor. 
+a. Sensors to diffrentiate between black and white lines. The sensor used by me is TCRT5000 which consists of Infrared emitter and phototransistor.
 b. Microcontroller (Arduino Mega used in this case).
 c. Motors (2 Johnson geared 300 RPM motors used in this case).
 d. Motor Driver to control the speed of the motors (L298N Module used in this case).
