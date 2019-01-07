@@ -1,3 +1,4 @@
+//This is the main fileof the project.This file contains declaration of variables to be used later.
 #include <LiquidCrystal.h>
 
 // Connect to PWM pins 5,6,7,8 are just for now
