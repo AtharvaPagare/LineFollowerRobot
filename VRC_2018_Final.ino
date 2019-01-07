@@ -29,7 +29,7 @@ int s2 = digitalRead(sw2);
 int s3 = digitalRead(sw3);
 // Array of Switches, Sensors:
   int sw[6] = {sw0, sw1, sw2, sw3, sw4, swm};
-  int threshold[7] = {700, 700, 700, 700, 700, 700, 700};    //Threshold of each sensor
+  int threshold[7] = {700, 700, 700, 700, 700, 700, 700};    //Analog Threshold of each sensor
   int seninput[7] = {0, 0, 0, 0, 0, 0, 0};     // Analog Input From Sensors
   int sen_min[7] = {900,900,900,900,900,900,900};
   int sen_max[7] = {100,100,100,100,100,100,100};
@@ -38,14 +38,8 @@ int s3 = digitalRead(sw3);
 //Bools for Fwd, Right, and Left Condns:
  bool forward_condns, right_condns, left_condns, node_condns, uturn_condns, inch_condns, fwd_condns, spl_node, counter_right_condns, counter_left_condns, y_condns;
 
-//Maze variables
-int n = -1;   //index of the path mem array
-int last_index;
-int array_length_of_dry_run = 0;
-int array_length_of_corrected_maze = 0;  //Length ofarray that we get by condensing the uncorrected array. 
-int h = 0;
+//Delay variables 
 int f; 
-int path_action_array[15] = {2,2,2,2,2,2,2,2,2,2,2,2,2,2,2};
 int fwd_delay = 300; 
 int halt_delay = 500;
 bool is_path = 1;
@@ -115,6 +109,7 @@ void setup() {
 }
 
 void loop() {
+  //This logic is present to enable the bot to take decision when it has to choose one action among multipple paths. The tracks.ino file contains further logic.
 if(s0 == HIGH && s1 == LOW && s2 == LOW && s3 == LOW){
     track1();
   }
